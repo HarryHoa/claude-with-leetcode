@@ -1,7 +1,14 @@
 <h1 align="center">Hi 👋, I'm Edwardz</h1>
 <h3 align="center">A passionate ML/DSA developer from Australia</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=edwardz&label=Profile%20views&color=0e75b6&style=flat" alt="edwardz" /> </p>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=edwardz&label=Profile%20views&color=0e75b6&style=flat" alt="edwardz" /> </p>
+
+<p align="center">
+  <a href="https://www.skills.google/public_profiles/8159229f-ed8b-4932-9a73-b1658ada0bfa" target="_blank">
+    <img src=".ggskills/.badge/ML_BigQuery.png" alt="Google Skills Badge" width="150"/>
+    <img src=".ggskills/.badge/Professional_ML_Engineer.png" alt="Google Skills Badge" width="150"/>
+  </a>
+</p>
 
 <section id="daily-leetcode-challenge">
   <h2>Daily LeetCode Challenge 🧩</h2>
