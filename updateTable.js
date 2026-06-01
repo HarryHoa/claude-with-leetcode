@@ -38,6 +38,12 @@ const FOLDER_TO_DISPLAY = {
     dart:       'Dart',
 };
 
+const VALID_DIRS = new Set([
+    'c', 'cpp', 'csharp', 'java', 'python',
+    'javascript', 'typescript', 'go', 'ruby',
+    'swift', 'kotlin', 'rust', 'scala', 'dart'
+]);
+
 const DIFFICULTY_ORDER = ['Easy', 'Medium', 'Hard'];
 const DIFFICULTY_BADGE = {
     Easy:   '🟢 Easy',
@@ -56,7 +62,7 @@ const PROBLEM_SITE_DATA = JSON.parse(
 const directories = readdirSync(PREPEND_PATH, { withFileTypes: true })
     .filter((d) => d.isDirectory())
     .map((d) => d.name)
-    .filter((dir) => !IGNORE_DIRS.includes(dir));
+    .filter((dir) => VALID_DIRS.has(dir));
 
 function generateLanguageBadges(dirs) {
     return dirs
@@ -136,9 +142,20 @@ for (const topic in PROBLEMS_OBJ) {
             ];
 
             for (const dir of directories) {
-                const filePath = nestedFilesInDir[dir].find((file) =>
-                    file.match(/[\w-]+\..+/)?.[0]?.startsWith(code),
-                );
+                const filePath = nestedFilesInDir[dir].find((file) => {
+                    const normalizedPath = file.replace(/\\/g, '/');
+                    const parts = normalizedPath.split('/');
+                    const parentFolder = parts[parts.length - 2] || '';
+                    const strippedCode = parseInt(code).toString(); // 0001 → 1
+            
+                    return (
+                        parentFolder.startsWith(`${code}-`)        || // 0001-two-sum
+                        parentFolder.startsWith(`${strippedCode}-`) || // 1-two-sum
+                        parentFolder === code                        || // 0001
+                        parentFolder === strippedCode                   // 1
+                    );
+                });
+            
                 row.push(
                     filePath
                         ? `<sub><div align='center'>[✔️](${encodeURIComponent(filePath)})</div></sub>`

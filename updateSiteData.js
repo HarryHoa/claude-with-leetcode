@@ -24,7 +24,6 @@ const languages = [
 for (const lang of languages) {
     const { name, directory, extension } = lang;
 
-    // Skip if directory doesn't exist
     if (!fs.existsSync(directory)) {
         console.log(`Skipping ${name} — directory '${directory}' not found`);
         continue;
@@ -39,7 +38,6 @@ for (const lang of languages) {
         const problemName = problem['link'].replace('/', '').toLowerCase();
         const problemNumber = problem['code'].split('-')[0];
 
-        // Find file by problem number prefix
         const foundFile = files.find((file) =>
             file.name.startsWith(`${problemNumber}-`),
         );
@@ -48,7 +46,6 @@ for (const lang of languages) {
             const oldFile = `${directory}/${foundFile.name}`;
             const newFile = `${directory}/${problemNumber}-${problemName}.${extension}`;
 
-            // Rename if needed
             if (oldFile !== newFile) {
                 fs.renameSync(oldFile, newFile);
                 renamed++;
