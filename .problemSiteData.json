@@ -7,6 +7,14 @@
     "code": "0001"
   },
   {
+    "problem": "Add Two Numbers",
+    "pattern": "Linked List",
+    "difficulty": "Medium",
+    "link": "add-two-numbers",
+    "code": "0002",
+    "java": true
+  },
+  {
     "problem": "Contains Duplicate II",
     "pattern": "Array",
     "difficulty": "Easy",
