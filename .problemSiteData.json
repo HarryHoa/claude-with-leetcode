@@ -7,6 +7,22 @@
     "code": "0001"
   },
   {
+    "problem": "Contains Duplicate II",
+    "pattern": "Array",
+    "difficulty": "Easy",
+    "link": "contains-duplicate-ii",
+    "code": "0219",
+    "cpp": true
+  },
+  {
+    "problem": "Longest Repeating Character Replacement",
+    "pattern": "Hash Table",
+    "difficulty": "Medium",
+    "link": "longest-repeating-character-replacement",
+    "code": "0424",
+    "cpp": true
+  },
+  {
     "problem": "Find Pivot Index",
     "pattern": "Array",
     "difficulty": "Easy",
@@ -14,11 +30,20 @@
     "code": "0724"
   },
   {
+    "problem": "Number of Substrings Containing All Three Characters",
+    "pattern": "Hash Table",
+    "difficulty": "Medium",
+    "link": "number-of-substrings-containing-all-three-characters",
+    "code": "1358",
+    "cpp": true
+  },
+  {
     "problem": "Maximum Number of Vowels in a Substring of Given Length",
     "pattern": "String",
     "difficulty": "Medium",
     "link": "maximum-number-of-vowels-in-a-substring-of-given-length",
-    "code": "1456"
+    "code": "1456",
+    "cpp": true
   },
   {
     "problem": "Maximum Length of Subarray With Positive Product",
@@ -39,7 +64,8 @@
     "pattern": "Array",
     "difficulty": "Easy",
     "link": "earliest-finish-time-for-land-and-water-rides-i",
-    "code": "3633"
+    "code": "3633",
+    "cpp": true
   },
   {
     "problem": "Limit Occurrences in Sorted Array",
