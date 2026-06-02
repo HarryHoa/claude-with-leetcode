@@ -88,5 +88,6 @@ e.g. 0001-two-sum.cpp
 <sub>Problem</sub> | <sub>Difficulty</sub> | <sub>C++</sub> | <sub>Python</sub> | <sub>Rust</sub>
 ---- | ---- | ---- | ---- | ----
 <sub>[0724 - Find Pivot Index](https://leetcode.com/problems/find-pivot-index)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>[✔️](cpp%2F724-find-pivot-index%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>[2248 - Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 
 

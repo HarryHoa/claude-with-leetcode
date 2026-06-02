@@ -12,5 +12,12 @@
     "difficulty": "Easy",
     "link": "find-pivot-index",
     "code": "0724"
+  },
+  {
+    "problem": "Intersection of Multiple Arrays",
+    "pattern": "Array",
+    "difficulty": "Easy",
+    "link": "intersection-of-multiple-arrays",
+    "code": "2248"
   }
 ]
