@@ -14,6 +14,13 @@
     "code": "0724"
   },
   {
+    "problem": "Maximum Length of Subarray With Positive Product",
+    "pattern": "Array",
+    "difficulty": "Medium",
+    "link": "maximum-length-of-subarray-with-positive-product",
+    "code": "1567"
+  },
+  {
     "problem": "Intersection of Multiple Arrays",
     "pattern": "Array",
     "difficulty": "Easy",
