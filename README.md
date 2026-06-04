@@ -105,6 +105,7 @@ e.g. 0001-two-sum.cpp
 <sub>[0724 - Find Pivot Index](https://leetcode.com/problems/find-pivot-index)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>[✔️](cpp%2F724-find-pivot-index%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[2248 - Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[3633 - Earliest Finish Time for Land and Water Rides I](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>[✔️](cpp%2F3633-earliest-finish-time-for-land-and-water-rides-i%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>[1493 - Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F1493-longest-subarray-of-1s-after-deleting-one-element%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[1567 - Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[3635 - Earliest Finish Time for Land and Water Rides II](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3635-earliest-finish-time-for-land-and-water-rides-ii%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 
@@ -119,7 +120,7 @@ e.g. 0001-two-sum.cpp
 
 <sub>Problem</sub> | <sub>Difficulty</sub> | <sub>C++</sub> | <sub>Java</sub> | <sub>Python</sub> | <sub>Rust</sub>
 ---- | ---- | ---- | ---- | ---- | ----
-<sub>[3751 - Total Waviness of Numbers in Range I](https://leetcode.com/problems/total-waviness-of-numbers-in-range-i)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3751-total-waviness-of-numbers-in-range-i%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>[3751 - Total Waviness of Numbers in Range I](https://leetcode.com/problems/total-waviness-of-numbers-in-range-i)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3751-total-waviness-of-numbers-in-range-i%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 
 ### Uncategorized
 
