@@ -144,6 +144,29 @@ https://leetcode.com/problems/{problem-slug}/
 
 - Time complexity: O(?) — [one line explanation]
 - Space complexity: O(?) — [one line explanation]
+
+### Provide a Visual Demonstration
+
+**Impact: HIGH** | **Category: explanation** | **Tags:** dry-run, trace, example
+
+Always dry run the algorithm with at least one example. Use the example from the
+problem if available.
+
+#### Required Format
+
+```markdown
+## Dry Run
+
+Input: nums = [2, 7, 11, 15], target = 9
+
+| Step | i   | num | need | seen before check | Action                 |
+| ---- | --- | --- | ---- | ----------------- | ---------------------- |
+| 1    | 0   | 2   | 7    | {}                | Store 2 -> 0           |
+| 2    | 1   | 7   | 2    | {2: 0}            | Found 2, return [0, 1] |
+```
+
+For recursive, tree, graph, or DP problems, use a trace that fits the problem better.
+Tables are preferred when they make the flow easier to follow.
 ````
 
 ## Rules
