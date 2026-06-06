@@ -62,6 +62,14 @@
     "cpp": true
   },
   {
+    "problem": "Longest Happy Prefix",
+    "pattern": "String",
+    "difficulty": "Hard",
+    "link": "longest-happy-prefix",
+    "code": "1392",
+    "cpp": true
+  },
+  {
     "problem": "Maximum Number of Vowels in a Substring of Given Length",
     "pattern": "String",
     "difficulty": "Medium",
@@ -95,6 +103,14 @@
     "cpp": true
   },
   {
+    "problem": "Sum of Scores of Built Strings",
+    "pattern": "String",
+    "difficulty": "Hard",
+    "link": "sum-of-scores-of-built-strings",
+    "code": "2223",
+    "cpp": true
+  },
+  {
     "problem": "Intersection of Multiple Arrays",
     "pattern": "Array",
     "difficulty": "Easy",
@@ -115,6 +131,14 @@
     "difficulty": "Medium",
     "link": "removing-stars-from-a-string",
     "code": "2390",
+    "cpp": true
+  },
+  {
+    "problem": "Left and Right Sum Differences",
+    "pattern": "Array",
+    "difficulty": "Easy",
+    "link": "left-and-right-sum-differences",
+    "code": "2574",
     "cpp": true
   },
   {
