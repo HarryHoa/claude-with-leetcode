@@ -15,7 +15,6 @@ A little assistant from Claude to help you learn daily LeetCode problems organis
 ## Table of Contents
 
 - [Structure](#structure)
-- [How It Works](#how-it-works)
 - [Problem List](#problem-list)
 
 ## Structure

@@ -50,7 +50,28 @@ function httpsPost(hostname, urlPath, headers, body) {
     });
 }
 
+function extractProblemMeta(dir) {
+    const folderName = path.basename(dir);
+    const firstHyphen = folderName.indexOf('-');
+
+    if (firstHyphen === -1) {
+        return { number: '', name: '' };
+    }
+
+    const number = folderName.substring(0, firstHyphen);
+    const slug = folderName.substring(firstHyphen + 1);
+    const name = slug
+        .split('-')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+
+    return { number, name };
+}
+
 async function searchYoutube(problemNumber, problemName) {
+    const NEETCODE_FALLBACK =
+        'https://youtu.be/T0u5nwSA0w0?si=Vi9-9aijv_-Pwko4';
+
     const queries = [
         `leetcode ${problemNumber} ${problemName} solution`,
         `neetcode ${problemNumber} ${problemName}`,
@@ -93,18 +114,8 @@ async function searchYoutube(problemNumber, problemName) {
         }
     }
 
-    console.warn('No specific YouTube video found for this problem.');
-    return null;
-}
-
-function extractProblemMeta(readmeContent) {
-    const plainText = readmeContent.replace(/<[^>]+>/g, '');
-    const match = plainText.match(/(\d+)[.\-\s]+([A-Za-z][^\n]{3,60})/m);
-
-    return {
-        number: match?.[1]?.trim() ?? '',
-        name: match?.[2]?.trim() ?? '',
-    };
+    console.warn('No specific video found — using NeetCode fallback.');
+    return `- NeetCode All LeetCode Solutions → ${NEETCODE_FALLBACK}`;
 }
 
 async function askOpenRouter(systemPrompt, userContent, retries = 3) {
@@ -234,15 +245,12 @@ async function runMentor() {
         const problemDescription = fs.readFileSync(readmePath, 'utf8');
         const sourceCode = fs.readFileSync(path.join(dir, codeFile), 'utf8');
 
-        const { number, name } = extractProblemMeta(problemDescription);
+        const { number, name } = extractProblemMeta(dir);
         console.log(`Problem detected: #${number} ${name}`);
 
-        const youtubeResults =
-            number && name ? await searchYoutube(number, name) : null;
+        const youtubeResults = await searchYoutube(number, name);
 
-        const searchContext = youtubeResults
-            ? `\n\n---\nReal YouTube search results (pick the most relevant watch URL, prefer NeetCode):\n${youtubeResults}\n---\n`
-            : '\n\n---\nNo YouTube results found — omit the Video Solution section.\n---\n';
+        const searchContext = `\n\n---\nReal YouTube search results (pick the most relevant watch URL, prefer NeetCode):\n${youtubeResults}\n---\n`;
 
         const userContent = [
             `Problem Description:\n${problemDescription}`,
