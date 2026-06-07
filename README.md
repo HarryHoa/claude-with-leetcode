@@ -28,8 +28,9 @@ claude-with-leetcode/
 ├── .github/
 │   └── workflows/                      ← CI/CD pipelines
 ├── .vscode/                            ← editor settings
+├── contest                             ← Weekly + Biweekly programming contests
 ├── cpp/                                ← C++ solutions
-├── dcc/                                ← additional solution set
+├── dcc/                                ← Daily Coding Challenge
 ├── java/
 │   └── 2-add-two-numbers/              ← Java solutions
 ├── python/
@@ -140,6 +141,7 @@ e.g. 0001-two-sum.cpp
 <sub>[0047 - Permutations II](https://leetcode.com/problems/permutations-ii)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F47-permutations-ii%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[1493 - Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F1493-longest-subarray-of-1s-after-deleting-one-element%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[1567 - Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>[2196 - Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F2196-create-binary-tree-from-descriptions%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[2352 - Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F2352-equal-row-and-column-pairs%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[3635 - Earliest Finish Time for Land and Water Rides II](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3635-earliest-finish-time-for-land-and-water-rides-ii%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 
@@ -163,9 +165,9 @@ e.g. 0001-two-sum.cpp
 <sub>Problem</sub> | <sub>Difficulty</sub> | <sub>C++</sub> | <sub>Java</sub> | <sub>Python</sub> | <sub>Rust</sub>
 ---- | ---- | ---- | ---- | ---- | ----
 <sub>[3940 - Limit Occurrences in Sorted Array](https://leetcode.com/problems/limit-occurrences-in-sorted-array)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>[✔️](cpp%2F3940-limit-occurrences-in-sorted-array%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
-<sub>[3950 - Exactly One Consecutive Set Bits Pair](https://leetcode.com/problems/exactly-one-consecutive-set-bits-pair)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>[✔️](cpp%2F3950-exactly-one-consecutive-set-bits-pair%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
-<sub>[3951 - Minimum Energy to Maintain Brightness](https://leetcode.com/problems/minimum-energy-to-maintain-brightness)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3951-minimum-energy-to-maintain-brightness%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
-<sub>[3952 - Maximum Total Value of Covered Indices](https://leetcode.com/problems/maximum-total-value-of-covered-indices)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3952-maximum-total-value-of-covered-indices%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>[3950 - Exactly One Consecutive Set Bits Pair](https://leetcode.com/problems/exactly-one-consecutive-set-bits-pair)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>[✔️](cpp%2F3950-exactly-one-consecutive-set-bits-pair%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>[3951 - Minimum Energy to Maintain Brightness](https://leetcode.com/problems/minimum-energy-to-maintain-brightness)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3951-minimum-energy-to-maintain-brightness%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>[3952 - Maximum Total Value of Covered Indices](https://leetcode.com/problems/maximum-total-value-of-covered-indices)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3952-maximum-total-value-of-covered-indices%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[3953 - Maximum Score with Co-Prime Element](https://leetcode.com/problems/maximum-score-with-co-prime-element)</sub> | <sub>🔴 Hard</sub> | <sub><div align='center'>[✔️](cpp%2F3953-maximum-score-with-co-prime-element%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 
 

@@ -111,6 +111,14 @@
     "cpp": true
   },
   {
+    "problem": "Create Binary Tree From Descriptions",
+    "pattern": "Array",
+    "difficulty": "Medium",
+    "link": "create-binary-tree-from-descriptions",
+    "code": "2196",
+    "cpp": true
+  },
+  {
     "problem": "Sum of Scores of Built Strings",
     "pattern": "String",
     "difficulty": "Hard",
