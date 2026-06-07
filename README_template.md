@@ -55,52 +55,6 @@ claude-with-leetcode/
 └── verifySiteData.js                   ← verifies solution URLs
 ```
 
-## How It Works
-
-Every hour a GitHub Actions workflow runs automatically:
-
-```
-updateSiteData.js       scan language dirs, rename files, update .problemSiteData.json
-↓
-verifySiteData.js       verify all solution URLs return 200
-↓
-detectNewProblems.js    detect newly committed solution files since last run
-↓
-dsaMentor.js            trigger Claude DSA mentor agent to generate lecture & GitHub Issue
-↓
-syncLeetcode.js         fetch latest problem metadata from LeetCode
-↓
-updateTable.js          rebuild README from README_template.md
-↓
-git push                commit changes via bot account
-```
-
-**Adding a new solution:**
-
-1. Add the problem entry to `.problemSiteData.json`
-2. Drop your solution file in the correct language folder — e.g. `cpp/0001-two-sum.cpp`
-3. The workflow picks it up automatically on the next run and updates the README
-
-**Solution file naming:**
-
-```
-{problem-number}-{leetcode-url-slug}.{extension}
-e.g. 0001-two-sum.cpp
-```
-
-**Legend:**
-
-| Symbol | Meaning        |
-| ------ | -------------- |
-| ✔️     | Solved         |
-| ❌     | Not yet solved |
-
-| Badge     | Meaning           |
-| --------- | ----------------- |
-| 🟢 Easy   | Easy difficulty   |
-| 🟡 Medium | Medium difficulty |
-| 🔴 Hard   | Hard difficulty   |
-
 ## Problem List
 
 <completion-tables />
