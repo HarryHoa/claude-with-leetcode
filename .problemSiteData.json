@@ -227,5 +227,37 @@
     "link": "maximum-score-with-co-prime-element",
     "code": "3953",
     "cpp": true
+  },
+  {
+    "problem": "Sum of Compatible Numbers in Range I",
+    "pattern": "Contest",
+    "difficulty": "Easy",
+    "link": "sum-of-compatible-numbers-in-range-i",
+    "code": "3954",
+    "cpp": true
+  },
+  {
+    "problem": "Valid Binary Strings With Cost Limit",
+    "pattern": "Contest",
+    "difficulty": "Medium",
+    "link": "valid-binary-strings-with-cost-limit",
+    "code": "3955",
+    "cpp": true
+  },
+  {
+    "problem": "Maximum Sum of M Non-Overlapping Subarrays I",
+    "pattern": "Contest",
+    "difficulty": "Hard",
+    "link": "maximum-sum-of-m-non-overlapping-subarrays-i",
+    "code": "3956",
+    "cpp": true
+  },
+  {
+    "problem": "Maximum Sum of M Non-Overlapping Subarrays II",
+    "pattern": "Contest",
+    "difficulty": "Hard",
+    "link": "maximum-sum-of-m-non-overlapping-subarrays-ii",
+    "code": "3957",
+    "cpp": true
   }
 ]

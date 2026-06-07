@@ -58,52 +58,6 @@ claude-with-leetcode/
 └── verifySiteData.js                   ← verifies solution URLs
 ```
 
-## How It Works
-
-Every hour a GitHub Actions workflow runs automatically:
-
-```
-updateSiteData.js       scan language dirs, rename files, update .problemSiteData.json
-↓
-verifySiteData.js       verify all solution URLs return 200
-↓
-detectNewProblems.js    detect newly committed solution files since last run
-↓
-dsaMentor.js            trigger Claude DSA mentor agent to generate lecture & GitHub Issue
-↓
-syncLeetcode.js         fetch latest problem metadata from LeetCode
-↓
-updateTable.js          rebuild README from README_template.md
-↓
-git push                commit changes via bot account
-```
-
-**Adding a new solution:**
-
-1. Add the problem entry to `.problemSiteData.json`
-2. Drop your solution file in the correct language folder — e.g. `cpp/0001-two-sum.cpp`
-3. The workflow picks it up automatically on the next run and updates the README
-
-**Solution file naming:**
-
-```
-{problem-number}-{leetcode-url-slug}.{extension}
-e.g. 0001-two-sum.cpp
-```
-
-**Legend:**
-
-| Symbol | Meaning        |
-| ------ | -------------- |
-| ✔️     | Solved         |
-| ❌     | Not yet solved |
-
-| Badge     | Meaning           |
-| --------- | ----------------- |
-| 🟢 Easy   | Easy difficulty   |
-| 🟡 Medium | Medium difficulty |
-| 🔴 Hard   | Hard difficulty   |
-
 ## Problem List
 
 ### Arrays & Hashing
@@ -141,7 +95,7 @@ e.g. 0001-two-sum.cpp
 <sub>[0047 - Permutations II](https://leetcode.com/problems/permutations-ii)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F47-permutations-ii%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[1493 - Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F1493-longest-subarray-of-1s-after-deleting-one-element%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[1567 - Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
-<sub>[2196 - Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F2196-create-binary-tree-from-descriptions%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>[2196 - Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F2196-create-binary-tree-from-descriptions%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[2352 - Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F2352-equal-row-and-column-pairs%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[3635 - Earliest Finish Time for Land and Water Rides II](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3635-earliest-finish-time-for-land-and-water-rides-ii%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 
@@ -169,5 +123,14 @@ e.g. 0001-two-sum.cpp
 <sub>[3951 - Minimum Energy to Maintain Brightness](https://leetcode.com/problems/minimum-energy-to-maintain-brightness)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3951-minimum-energy-to-maintain-brightness%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[3952 - Maximum Total Value of Covered Indices](https://leetcode.com/problems/maximum-total-value-of-covered-indices)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3952-maximum-total-value-of-covered-indices%2FANALYSIS.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 <sub>[3953 - Maximum Score with Co-Prime Element](https://leetcode.com/problems/maximum-score-with-co-prime-element)</sub> | <sub>🔴 Hard</sub> | <sub><div align='center'>[✔️](cpp%2F3953-maximum-score-with-co-prime-element%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+
+### Contest
+
+<sub>Problem</sub> | <sub>Difficulty</sub> | <sub>C++</sub> | <sub>Java</sub> | <sub>Python</sub> | <sub>Rust</sub>
+---- | ---- | ---- | ---- | ---- | ----
+<sub>[3954 - Sum of Compatible Numbers in Range I](https://leetcode.com/problems/sum-of-compatible-numbers-in-range-i)</sub> | <sub>🟢 Easy</sub> | <sub><div align='center'>[✔️](cpp%2F3954-sum-of-compatible-numbers-in-range-i%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>[3955 - Valid Binary Strings With Cost Limit](https://leetcode.com/problems/valid-binary-strings-with-cost-limit)</sub> | <sub>🟡 Medium</sub> | <sub><div align='center'>[✔️](cpp%2F3955-valid-binary-strings-with-cost-limit%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>[3956 - Maximum Sum of M Non-Overlapping Subarrays I](https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-i)</sub> | <sub>🔴 Hard</sub> | <sub><div align='center'>[✔️](cpp%2F3956-maximum-sum-of-m-non-overlapping-subarrays-i%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
+<sub>[3957 - Maximum Sum of M Non-Overlapping Subarrays II](https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-ii)</sub> | <sub>🔴 Hard</sub> | <sub><div align='center'>[✔️](cpp%2F3957-maximum-sum-of-m-non-overlapping-subarrays-ii%2FREADME.md)</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub> | <sub><div align='center'>❌</div></sub>
 
 
